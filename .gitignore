@@ -1,0 +1,14 @@
+# Dependencies
+/node_modules
+
+# Production
+/build
+
+# Environmentals
+.env
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Misc
+.DS_Store
