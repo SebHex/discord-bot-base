@@ -12,6 +12,8 @@ const client = new Client({
   simpleCommand: {
     prefix: '!'
   },
+  // Determines what information the bot will receive from Discord
+  // See https://discord-ts.js.org/docs/general/client/#intents-1
   intents: [
     Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_MEMBERS,
