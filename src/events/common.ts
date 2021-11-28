@@ -1,13 +1,13 @@
 import type { ArgsOf } from 'discordx'
 import { Discord, On } from 'discordx'
 
-type MessageCreateProps = ArgsOf<'messageCreate'>
-type MessageReactionAddProps = ArgsOf<'messageReactionAdd'>
+type MessageCreateArgs = ArgsOf<'messageCreate'>
+type MessageReactionAddArgs = ArgsOf<'messageReactionAdd'>
 
 @Discord()
 export abstract class AppDiscord {
   @On('messageCreate')
-  onMessageCreate([message]: MessageCreateProps) {
+  onMessageCreate([message]: MessageCreateArgs) {
     const username = message.author.username
     const content = message.content
 
@@ -16,7 +16,7 @@ export abstract class AppDiscord {
   }
 
   @On('messageReactionAdd')
-  onMessageReactionAdd([reaction, user]: MessageReactionAddProps) {
+  onMessageReactionAdd([reaction, user]: MessageReactionAddArgs) {
     const username = user.username
     const emojiName = reaction.emoji.name
 
