@@ -35,7 +35,7 @@ client.once('ready', async () => {
   await client.initApplicationPermissions(true)
 
   // eslint-disable-next-line no-console
-  console.log('Bot started')
+  console.log('🤖 Bot started!')
 })
 
 client.on('interactionCreate', (interaction: Interaction) => {
