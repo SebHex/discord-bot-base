@@ -2,6 +2,7 @@
   "name": "discord-bot-base",
   "version": "1.0.0",
   "description": "A discord bot base",
+  "author": "SebHex",
   "private": true,
   "type": "module",
   "main": "build/client.js",
@@ -13,7 +14,6 @@
     "lint": "eslint",
     "format": "prettier --write ."
   },
-  "author": "SebHex",
   "dependencies": {
     "@discordx/importer": "^1.1.2",
     "@discordx/utilities": "^3.1.5",
