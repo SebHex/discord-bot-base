@@ -22,10 +22,9 @@ to it
 | Script        | Description                                        |
 |---------------|----------------------------------------------------|
 | `dev`         | Start a development version of the bot.            |
-| `start`       | Start the bot.                                     |
 | `build`       | Build the bot.                                     |
-| `build:serve` | Build then serve the bot from the build directory. |
-| `serve`       | Serve the bot from the build directory.            |
+| `build:start` | Build then serve the bot from the build directory. |
+| `start`       | Serve the bot from the build directory.            |
 | `lint`        | Check for linting warnings and errors with ESLint. |
 | `format`      | Format using prettier.                             |
 
