@@ -18,9 +18,10 @@
     "forceConsistentCasingInFileNames": true,
 
     /* Pathing */
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@lib/*": ["lib/*"]
+      "@/*": ["src/*"],
+      "@lib/*": ["src/lib/*"]
     }
   }
 }
