@@ -8,16 +8,16 @@
     "esModuleInterop": true,
     "moduleResolution": "Node",
 
-    /* Experimental Options */
+    /* Experimental */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 
-    /* Advanced Options */
+    /* Advanced */
     "incremental": true,
     "skipLibCheck": false,
     "forceConsistentCasingInFileNames": true,
 
-    /* Pathing Options */
+    /* Pathing */
     "baseUrl": "src",
     "paths": {
       "@lib/*": ["lib/*"]
