@@ -34,8 +34,11 @@ client.once('ready', async () => {
   // Init permissions. Enable log to see changes
   await client.initApplicationPermissions(true)
 
+  const green = '\x1b[32m'
+  const reset = '\x1b[0m'
+
   // eslint-disable-next-line no-console
-  console.log('🤖 Bot started!')
+  console.info(`${green}🤖 Bot started!${reset}`)
 })
 
 client.on('interactionCreate', (interaction: Interaction) => {
