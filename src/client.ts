@@ -3,7 +3,7 @@ import 'reflect-metadata'
 import dotenv from 'dotenv'
 import { Intents } from 'discord.js'
 import { Client } from 'discordx'
-import { dirname, importx } from '@discordx/importer'
+import { importx } from '@discordx/importer'
 
 // Load .env file
 dotenv.config()
@@ -49,7 +49,7 @@ client.on('messageCreate', (message: Message) => {
 })
 
 const run = async () => {
-  const paths = dirname(import.meta.url) + '/{events,commands}/**/*.{ts,js}'
+  const paths = __dirname + '/{events,commands}/**/*.{ts,js}'
   await importx(paths)
 
   // Private bot token should be defined in .env file

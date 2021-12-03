@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "CommonJS",
     "outDir": "./build",
     "rootDir": "./src",
     "strict": true,
@@ -15,6 +15,9 @@
     /* Advanced Options */
     "incremental": true,
     "skipLibCheck": false,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    /* Pathing Options */
+    "baseUrl": "src"
   }
 }
