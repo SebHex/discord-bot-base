@@ -11,7 +11,7 @@
     "build": "tsc && tsc-alias && del tsconfig.tsbuildinfo",
     "build:start": "npm run build && npm start",
     "start": "node build/client.js",
-    "lint": "eslint",
+    "lint": "eslint .",
     "format": "prettier --write ."
   },
   "dependencies": {
